@@ -1,0 +1,39 @@
+*{
+ margin: 0px;
+ padding: 0px;
+ box-sizing: border-box;
+}
+
+/* <-------Navigation Bar------> */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    border: 1px solid red;
+}
+.navlogo{
+    margin-left: 90px;
+}
+.navlogo img{
+    cursor: pointer;
+}
+a{ 
+    text-decoration: none;
+    color: #5F88A3;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 16px 0px;
+    padding: 0px 0px 0px 40px;
+}
+
+.navDownloadApp{
+    margin-right: 40px;
+}
+.navDownloadApp a{
+    color: aliceblue;
+    background-color: #F3223B;
+    padding: 14px 30px;
+    border-radius: 5px;
+}
