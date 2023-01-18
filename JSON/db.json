@@ -1088,7 +1088,7 @@
                 "image":"https://images.dominos.co.in/CMB1375.jpg",
                 "desc":"Regular Margherita +Regular Farmhouse + Garlic Bread + Pepsi",
                 "size":{
-                    "Price":429
+                    "price":429
                 }
             },
             {
@@ -1274,7 +1274,7 @@
                 "image":"https://images.dominos.co.in/Choco_Lava.png",
                 "desc":"Chocolate lovers delight! Indulgent, gooey molten lava inside chocolate cake",
                 "size":{
-                    "Price":109
+                    "price":109
                 }
             },
             {
@@ -1316,7 +1316,7 @@
                 "image":"https://images.dominos.co.in/Chilli-4827.png",
                 "desc":"Fiery chilli flakes topping in a bottle",
                 "size":{
-                    "Price":85
+                    "price":85
                 }
             }
         ]
