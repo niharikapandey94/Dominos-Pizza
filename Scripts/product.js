@@ -100,11 +100,10 @@ function card(data,key){
             }
             else if(e.target.value=="price"){
                prices.innerHTML = null;
-                for(let key in element.size.price){
-                    let sel = document.createElement("option");
-                sel.innerText = key  
+                
+                let sel = document.createElement("option");
+                sel.innerText = element.size.price
                 prices.append(sel); 
-                }
             }
 
         })
