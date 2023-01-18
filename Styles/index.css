@@ -17,6 +17,8 @@ nav{
 }
 .navlogo img{
     cursor: pointer;
+    width: 210px;
+    height: 33px;
 }
 .navOptions a{ 
     text-decoration: none;
@@ -182,6 +184,8 @@ width: 87%;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
+    margin-top: 30px;
+    margin-bottom: 80px;
 }
 .optionsCards{
     width: 24.3%;
@@ -222,3 +226,108 @@ width: 87%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #DE042E;
 }
+
+/* mobile section */
+
+.mobileSection{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background-color: #F2F5FC;
+    margin-bottom: 60px;
+}
+.mobileApp{
+    width: 45%;
+}
+.mobileApp h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 45px;
+    color: #59688C;
+    margin-top: 110px;
+    margin-bottom: 30px;  
+} 
+.mobileApp p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: #59688C;
+    margin-bottom: 60px;    
+}
+.mobileApp img{
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+/* website details */
+.websiteInfo{
+    width: 95%;
+    margin: auto;
+    margin-bottom: 60px;
+}
+.websiteInfo h1{
+    margin-top: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    color: #006491;
+}
+.websiteInfo p{
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #54565B; 
+}
+
+/* footer */
+
+.footer{
+    background-color: #222E3A;
+}
+.footerDivs{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.footerDivs h3{
+    margin-top: 60px;
+    margin-bottom: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: #546273;
+
+}
+.footerDivs p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color:aliceblue;
+    margin-bottom: 20px;
+
+}
+.socialMediaImg{
+    margin-bottom: 30px;
+}
+.socialMediaImg img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.copyRight{
+    width: 100%;
+    background-color: #1A2735;
+}
+.copyRight p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: #5C6783;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+
+
+
+
