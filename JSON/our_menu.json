@@ -1,5 +1,5 @@
 {
-    "VEG": [
+    "veg": [
       {
         "id": 1,
         "image":"https://www.dominos.co.in/files/items/Farmhouse.jpg",
@@ -78,8 +78,85 @@
     ],
   
   
-     "NON":[
-      {}
+     "non_veg":[
+      {
+        "id": 14,
+        "image":"https://www.dominos.co.in/files/items/MicrosoftTeams-image_(14).png",
+        "title": "CHICKEN GOLDEN DELIGHT",
+        "description": "Mmm! Barbeque chicken with a topping of golden corn loaded with extra cheese. Worth its weight in gold!"
+      },
+      {
+        "id": 15,
+        "image":"https://www.dominos.co.in/files/items/MicrosoftTeams-image_(13).png",
+        "title": "NON VEG SUPREME",
+        "description": "Bite into supreme delight of Black Olives, Onions, Grilled Mushrooms, Pepper BBQ Chicken, Peri-Peri Chicken, Grilled Chicken Rashers"
+      },
+      {
+        "id": 16,
+        "image":"https://www.dominos.co.in/files/items/MicrosoftTeams-image_(11).png",
+        "title": "CHICKEN DOMINATOR",
+        "description": "Treat your taste buds with Double Pepper Barbecue Chicken, Peri-Peri Chicken, Chicken Tikka & Grilled Chicken Rashers"
+      },
+      {
+        "id": 17,
+        "image":"https://www.dominos.co.in/files/items/Pepper_Barbeque_&_Onion.jpg",
+        "title": "PEPPER BARBECUE & ONION",
+        "description": "Pepper Barbecue Chicken I Onion"
+      },
+      {
+        "id": 18,
+        "image":"https://www.dominos.co.in/files/items/MicrosoftTeams-image_(15).png",
+        "title": "PEPPER BARBECUE CHICKEN",
+        "description": "Pepper Barbecue Chicken I Cheese"
+      },
+      {
+        "id": 19,
+        "image":"https://www.dominos.co.in/files/items/MicrosoftTeams-image_(17).png",
+        "title": "CHICKEN SAUSAGE",
+        "description": "Chicken Sausage & Cheese"
+      },
+      {
+        "id": 20,
+        "image":"https://www.dominos.co.in/files/items/MicrosoftTeams-image_(10).png",
+        "title": "CHICKEN FIESTA",
+        "description": "Grilled Chicken Rashers I Peri-Peri Chicken I Onion I Capsicum"
+      },
+      {
+        "id": 21,
+        "image":"https://www.dominos.co.in/files/items/MicrosoftTeams-image_(18).png",
+        "title": "INDI CHICKEN TIKKA",
+        "description": "The wholesome flavour of tandoori masala with Chicken tikka I onion I red paprika I mint mayo"
+      },
+      {
+        "id": 22,
+        "image":"https://www.dominos.co.in/files/items/MicrosoftTeams-image_(20).png",
+        "title": "CHICKEN PEPPERONI",
+        "description": "A classic American taste! Relish the delectable flavor of Chicken Pepperoni, topped with extra cheese"
+      },
+      {
+        "id": 23,
+        "image":"https://www.dominos.co.in/files/items/chicken_feast.jpg",
+        "title": "THE 5 CHICKEN FEAST PIZZA",
+        "description": "Loaded with 5 different Chicken toppings - grilled Chicken Rashers, Chicken Meatballs, Chicken Tikka, herby Chicken Sausage and flavorful Chicken Keema"
+      },
+      {
+        "id": 24,
+        "image":"https://www.dominos.co.in/files/items/spiced_doubled.jpg",
+        "title": "SPICED DOUBLE CHICKEN",
+        "description": "Delightful combination of our spicy duo- Pepper Barbecue Chicken and Peri Peri Chicken for Chicken Lovers."
+      },
+      {
+        "id": 25,
+        "image":"https://www.dominos.co.in/files/items/chi_max.jpg",
+        "title": "CHICKEN MAXIMUS",
+        "description": "Loaded to the Max with Chicken Tikka, Chicken Keema, Chicken Sausage and a double dose of grilled Chicken Rashers."
+      },
+      {
+        "id": 26,
+        "image":"https://www.dominos.co.in/files/items/ind_fus.jpg",
+        "title": "INDO FUSION CHICKEN PIZZA",
+        "description": "Relish the fusion of 5 of your favorite chicken toppings - Peri Peri Chicken, Chicken Pepperoni, Chicken Tikka, Pepper Barbecue Chicken and Chicken Meatballs"
+      }
      ]
    
   }

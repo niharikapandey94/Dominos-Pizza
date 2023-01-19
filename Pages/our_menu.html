@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+     <link rel="stylesheet" href=>
     <style>
+      
       body{margin: 0px;}
       .sk_nav{
         width: 100%;
@@ -66,6 +68,27 @@
         transition: div 2s;
         ;}
 
+      #pizza_name{
+        text-align: center;
+      }
+
+      #pizza_display{
+        width: 100%;
+        display: grid;
+        gap:20px;
+        grid-template-columns: repeat(3,1fr);
+      }
+
+      #pizza_display img{
+        width: 60%;
+      }
+
+      #pizza_display>div{
+        text-align: center;
+        border: solid black 1px;
+        padding: 20px 20px 20px 20px;
+      }
+
 
        
         
@@ -92,8 +115,8 @@
         </div>
 
         <div class="bottom_menu">
-            <a href="#">VEG PIZZAS |</a>
-            <a href="#">NON VEG PIZZAS |</a>
+            <a class="veg" href="#">VEG PIZZAS |</a>
+            <a class="non_veg" href="#">NON VEG PIZZAS |</a>
             <a href="#">SLIDE ORDERS |</a>
             <a href="#">BEVERAGES |</a>
             <a href="#">CHOICE OF CRUSTS |</a>
@@ -111,10 +134,85 @@
       <img src="/Images/our_menu_great_taste.PNG" alt="">
     </div>
 
-    <!-- <details>
-        <summary>Top</summary>
-        <div>helo</div>
-    </details> -->
+    <div id="main_display">
+        <h2 id="pizza_name">VEG PIZZAS</h2>
+        <div id="pizza_display">
+
+        </div>
+         
+    </div>
+
+
+  
 
 </body>
 </html>
+
+<script>
+
+  let veg_pizza="/JSON/our_menu.json"
+  fetch(veg_pizza)
+    .then((res)=>res.json())
+    .then((data)=>{
+        display(data.veg)
+    })
+
+
+    
+    function display(data){ 
+      document.querySelector(".veg").addEventListener("click",()=>{
+      document.getElementById("pizza_name").innerText="Veg Pizza"
+     });
+    
+      data.forEach(elem => {
+         let card=document.createElement("div");
+
+         let title=document.createElement("h3");
+         title.innerText=elem.title
+
+         let image= document.createElement("img");
+         image.setAttribute("src",elem.image)
+
+         let dis=document.createElement("p");
+         dis.innerText=elem.description
+
+         let button =document.createElement("button")
+         button.innerText="ORDER NOW"
+
+         card.append(image,title,dis,button)
+         document.getElementById("pizza_display").append(card)
+      });
+
+    } 
+
+
+
+    document.querySelector(".non_veg").addEventListener("click",(data)=>{
+      document.getElementById("pizza_name").innerText="Non Pizza"
+       document.getElementById("pizza_display").innerHTML=null
+       let url="/JSON/our_menu.json"
+            fetch(url)
+              .then((res)=>res.json())
+              .then((data)=>{
+                  display(data.non_veg)
+                  console.log("hello")
+              })
+     });
+
+
+     document.querySelector(".veg").addEventListener("click",(data)=>{
+      document.getElementById("pizza_name").innerText="Non Pizza"
+       document.getElementById("pizza_display").innerHTML=null
+       let url="/JSON/our_menu.json"
+            fetch(url)
+              .then((res)=>res.json())
+              .then((data)=>{
+                  display(data.veg)
+                  console.log("hello")
+              })
+     });
+
+   
+
+   
+</script>
