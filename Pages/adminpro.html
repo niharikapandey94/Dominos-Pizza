@@ -1,47 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
+
 <body>
-    <form id="form">
-    
-   
+  
+<div>
+<h1>ADD ITEMS</h1>
     <select id="filter">
-        <option value="">Category</option>
-        <option value="bestseller">bestseller</option>
-        <option value="newlaunches">newlaunches</option>
-        <option value="vegpizza">vegpizza</option>
-        <option value="nonvegpizza">nonvegpizza</option>
-        <option value="beverages">beverages</option>
-        <option value="dessert">dessert</option>
-      </select>
-      
+      <option value="">Category</option>
+      <option value="bestseller">bestseller</option>
+      <option value="newlaunches">newlaunches</option>
+      <option value="vegpizza">vegpizza</option>
+      <option value="nonvegpizza">nonvegpizza</option>
+      <option value="beverages">beverages</option>
+      <option value="dessert">dessert</option>
+    </select>
+
     <input type="text" id="product" placeholder="product" />
     <input type="text" id="img" placeholder="image" />
     <input type="text" id="desc" placeholder="description" />
-      <br>
-    <input type="checkbox" id="a1" name="vehicle1" value="Regular">
-    <label for="vehicle1"> Regular</label>
-    <input type="text" id="desc1" placeholder="description" /><br>
-    <input type="checkbox" id="a2" name="vehicle2" value="Medium">
-    <label for="vehicle2">Medium</label>
-    <input type="text" id="desc2" placeholder="description" /><br>
-    <input type="checkbox" id="a3" name="vehicle3" value="Large">
-    <label for="vehicle3">Large</label>
-    <input type="text" id="desc3" placeholder="description" /><br>
-    
-    <input type="checkbox" id="a4" name="vehicle3" value="Price">
-    <label for="vehicle3">Price</label>
+    <br>
+    <input type="checkbox" id="a1" value="Regular">
+
+    <label> Regular</label>
+    <input type="text" id="desc1" placeholder="description" />
+    <input type="text" id="desca" placeholder="Price" /><br>
+    <input type="checkbox" id="a2"  value="Medium">
+    <label>Medium</label>
+    <input type="text" id="desc2" placeholder="description" />
+    <input type="text" id="descb" placeholder="Price" /><br>
+    <input type="checkbox" id="a3" value="Large">
+
+    <label>Large</label>
+    <input type="text" id="desc3" placeholder="description" />
+ <input type="text" id="descc" placeholder="Price" /><br>
+    <input type="checkbox" id="a4" value="Price">
+    <label>Price</label>
     <input type="text" id="desc4" placeholder="description" /><br>
-    <input type="submit"id="submit"></input>
-     </form>
-    </body>
-    </html>
+    <button id="btn">ADD</button>
+  </div>
 
-    <script src="../Scripts/admin.js">
+<div>
+  <h1>UPDATE ITEMS</h1>
+  <input type=" number" id="id" placeholder="ID" />
+  <select id="filter1">
+    <option value="">Category</option>
+    <option value="bestseller">bestseller</option>
+    <option value="newlaunches">newlaunches</option>
+    <option value="vegpizza">vegpizza</option>
+    <option value="nonvegpizza">nonvegpizza</option>
+    <option value="beverages">beverages</option>
+    <option value="dessert">dessert</option>
+  </select>
 
-</script>
+  <input type="text" id="productt" placeholder="product" />
+  <input type="text" id="imgg" placeholder="image" />
+  <input type="text" id="descs" placeholder="description" />
+  <br>
+  <input type="checkbox" id="a11" value="Regular">
+
+  <label> Regular</label>
+  <input type="text" id="desc11" placeholder="description" />
+  <input type="text" id="descaa" placeholder="Price" /><br>
+  <input type="checkbox" id="a22"  value="Medium">
+  <label>Medium</label>
+  <input type="text" id="desc22" placeholder="description" />
+  <input type="text" id="descbb" placeholder="Price" /><br>
+  <input type="checkbox" id="a33" value="Large">
+
+  <label>Large</label>
+  <input type="text" id="desc33" placeholder="description" />
+<input type="text" id="desccc" placeholder="Price" /><br>
+  <input type="checkbox" id="a44" value="Price">
+  <label>Price</label>
+  <input type="text" id="desc44" placeholder="description" /><br>
+  <button id="update">UPDATE</button>
+</div>
+<div>
+  <h1>DELETE</h1>
+  <select id="filter2">
+    <option value="">Category</option>
+    <option value="bestseller">bestseller</option>
+    <option value="newlaunches">newlaunches</option>
+    <option value="vegpizza">vegpizza</option>
+    <option value="nonvegpizza">nonvegpizza</option>
+    <option value="beverages">beverages</option>
+    <option value="dessert">dessert</option>
+  </select>
+
+  <input type="number" id="id" placeholder="id" />
+  <button id="del">DELETE</button>
+</div>
+</body>
+</html>
+<script src="../Scripts/admin.js"></script>
