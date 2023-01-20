@@ -1320,7 +1320,33 @@
                 }
             }
         ]
-    
-    
-    
+        ,
+        "users":[
+                {
+                    "id":1,
+                    "phone": 1234567890,
+                    "orders":[
+                        {
+
+                        }
+                    ],
+                    "otp":"0000"
+                    
+                }
+        ],
+        "orders":[
+            {
+                "id":1,
+                "phone":1234567890,
+                "orders":[
+                    {
+                       "totalbill": 999,
+                        "payment-method":"CARD",
+                        "cardno":"0000",
+                        "date":"21/01/2023",
+                        "address":""
+                    }
+                ]
+            }
+        ]
 }

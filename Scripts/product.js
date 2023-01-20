@@ -1,11 +1,13 @@
 
+// "start": "json-server --watch ./JSON/db.json"
+
 let keys = ["bestseller","newlaunches","parathapizza","vegpizza","gourmet","nonvegpizza","beverages","specialitychicken","sides","pizzamania","lunchcombo","mealfortwo","mealforfour","dessert","chefboss"]
 
 let container = document.getElementById("main-container");
 
 for(let i=0;i<keys.length;i++){
 
-fetch("http://localhost:3000/"+keys[i])
+fetch("https://snotty-wash-4238-backend-niharikapandey94.vercel.app/"+keys[i])
 .then((res)=>{
 return  res.json();
 })
@@ -104,6 +106,9 @@ function card(data,key){
                 let sel = document.createElement("option");
                 sel.innerText = element.size.price
                 prices.append(sel); 
+            
+            }else{
+                prices.innerHTML = null
             }
 
         })
@@ -128,3 +133,10 @@ function card(data,key){
 
 
 }
+
+
+
+
+
+
+
