@@ -5,119 +5,131 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product</title>
-    <link rel="stylesheet" href="Styles/product.css">
     <style>
-         body {
-    padding: 0;
-    margin: 0;
+        *{
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
-}
-#sidebarMenu {
-    height: 100%;
-    position: fixed;
-    left: 0;
-    width: 250px;
-    margin-top: 60px;
-    transform: translateX(-250px);
-    transition: transform 250ms ease-in-out;
-    background-color: #0D47A1;
-}
-.sidebarMenuInner{
-    margin:0;
-    padding:0;
-    border-top: 1px solid rgba(255, 255, 255, 0.10);
-}
-.sidebarMenuInner li{
-    /* list-style: none; */
-    color: #fff;
-    text-transform: uppercase;
-    padding: 20px;
-    cursor: pointer;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
-    font-family: Arial, Helvetica, sans-serif;
-}
-.sidebarMenuInner li a{
-    color: #fff;
-    text-transform: uppercase;
-    cursor: pointer;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-}
-input[type="checkbox"]:checked ~ #sidebarMenu {
-    transform: translateX(0);
-}
+  }
+  /* #menu Options */
 
-input[type=checkbox] {
-    transition: all 0.3s;
-    box-sizing: border-box;
-    display: none;
-}
-.sidebarIconToggle {
-    transition: all 0.3s;
-    box-sizing: border-box;
+  .MainMenuOptions{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0D47A1;
+    color: aliceblue;
+  }
+  .AllMenuOptions{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+  .AllMenuOptions div{
+    margin-right: 20px;
+    margin-top: 5px;
     cursor: pointer;
-    position: absolute;
-    /* z-index: 99; */
-    height: 100%;
+  }
+
+  /* footer */
+  .footer{
     width: 100%;
-    top: 22px;
-    left: 15px;
-    height: 22px;
-    width: 22px;
-}
-/* .burger {
-    transition: all 0.3s;
-    box-sizing: border-box;
-    position: absolute;
-    height: 3px;
+    height: 160px;
+    background-color: #222E3A;
+    color: #546273;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footerInsider{
+    margin-left: 5%;
+    margin-top: 30px;
+  }
+  .footerOptions{
+    display: flex;
+  }
+  p{
+    margin-right: 30px;
+    margin-top: 30px;
+  }
+  .downloadApp{
+    margin-top: 30px;
+    margin-right: 10%;
+  }
+  .downloadApp img{
+    margin-top: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  h2{
+    text-align: center;
+  }
+  /* copyright */
+  .copyRight{
     width: 100%;
-    background-color: red;
-} */
-/* .horizontal {
-    transition: all 0.3s;
-    box-sizing: border-box;
-    position: relative;
-    float: left;
-    margin-top: 3px;
-} */
-/* .diagonal.part-1 {
-    position: relative;
-    transition: all 0.3s;
-    box-sizing: border-box;
-    float: left;
+    background-color: #1A2735;
 }
-.diagonal.part-2 {
-    transition: all 0.3s;
-    box-sizing: border-box;
-    position: relative;
-    float: left;
-    margin-top: 3px;
-}  */
+.copyRight p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: #5C6783;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-top: 0px;
+}
     </style>
 </head>
 <body>
-    <nav>
-        <div class="firstPart">
-        <div class="slidingOption">
-        <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
-  <label for="openSidebarMenu" class="sidebarIconToggle">
-    <!-- <div class="burger diagonal part-1"></div> -->
-    <!-- <div class="burger horizontal">=</div> -->
-    <!-- <div class="burger diagonal part-2"></div> -->
-  
-  </label>
-  <div id="sidebarMenu">
-    <ul class="sidebarMenuInner">
-      <li><a href=" " target="_blank">Company</a></li>
-      <li><a href=" " target="_blank">Instagram</a></li>
-      <li><a href=" " target="_blank">Twitter</a></li>
-      <li><a href=" " target="_blank">YouTube</a></li>
-      <li><a href=" " target="_blank">Linkedin</a></li>
-    </ul>
+  <!-- menu options -->
+  <div class="MainMenuOptions">
+    <div class="AllMenuOptions">
+         <div>EVERYDAY VALUE |</div>
+         <div>BESTSELLERS |</div>
+         <div>NEW LAUNCHES |</div>
+         <div>FLAVOUR OF EAST |</div>
+         <div>PARATHA PIZZA |</div>
+         <div>VEG PIZZA |</div>
+         <div>NON-VEG PIZZA |</div>
+         <div>BEVERAGES |</div>
+         <div>PIZZA MANIA |</div>
+         <div>SPECIALITY CHICKEN |</div>
+         <div>SIDES |</div>
+         <div>CHICKEN LOVERS PIZZA |</div>
+         <div>LUNCH COMBOS |</div>
+         <div>MEAL FOR 2 |</div>
+         <div>MEAL FOR 4 |</div>
+         <div>DESSERT |</div>
+         <div>CHEFBOSS</div>
     </div>
-    </div>
-    <div class="Img"> <img src="Images/facebook.png " alt=""></div>
-    </div>
-    </nav>
+ </div>
+
+ <!-- footer -->
+ <div class="footer">
+   <div class="footerInsider">
+      <div><img src="Images/hello_dominos_20210615.png" alt=""></div>
+      <div class="footerOptions">
+       <p>Disclaimer</p>
+      <p>Privacy Policy</p>
+      <p>Fag</p>
+      <p>Terms & Conditions</p>
+      <p>Feedback</p>
+      </div>
+      </div>
+      <div class="downloadApp">
+       <h2>Download App</h2>
+        <img src="Images/play_store.png" alt="">
+        <img src="Images/app_store.png" alt="">
+      </div>
+ </div>
+ <div class="copyRight">
+   <p>All Rights Reserved. Copyright © Jubilant FoodWorks Ltd.</p>
+</div>
 </body>
 </html>
