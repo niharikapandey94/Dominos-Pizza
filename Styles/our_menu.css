@@ -1,4 +1,6 @@
-body{margin: 0px;}
+body{margin: 0px;
+ 
+  font-family:Arial, Helvetica, sans-serif;}
 .sk_nav{
   width: 100%;
 }
@@ -6,6 +8,7 @@ body{margin: 0px;}
 .sk_nav{
   background-color: #0b639c;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  position: fixed;
 }
 
 .sk_nav a{
@@ -41,13 +44,17 @@ body{margin: 0px;}
    display: flex;
 }
 .nav_btn button{
-  background-color: red;
+  background-color: #df1635 ;
   padding: 8px 10px 8px 10px;
   border-radius: 5px;
   border: none;
   margin-left: 10px;
 } 
 
+
+.great_taste{
+  padding-top: 120px;
+}
 .great_taste>img{
   width: 100%;
 }
@@ -63,9 +70,10 @@ details{margin-left: 5px;
 }
 
 #pizza_display{
-  width: 100%;
+  width: 98%;
+  margin: auto;
   display: grid;
-  gap:20px;
+  gap:15px;
   grid-template-columns: repeat(3,1fr);
 }
 
@@ -74,8 +82,74 @@ details{margin-left: 5px;
 }
 
 #pizza_display>div{
+  margin-left: 4px;
+  background-color: #e61a39;
+  color: white;
+  border-radius: 2%;
   text-align: center;
-  border: solid black 1px;
-  padding: 20px 20px 20px 20px;
+  padding: 30px 25px 20px 25px;
+}
+
+#pizza_display button{
+  border: solid #e61a39 1px;
+  font-size: 16px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+  font-weight: 550;
+  color: #e61a39;
+  font-family:'Times New Roman', Times, serif ;
+  background-color: white;
+}
+
+#pizza_display button:hover{
+  border: solid white 1px;
+  background-color:#e61a39; 
+  color: white;
+  cursor: pointer;
+}
+
+.faq details{font-size: 16px;
+  border: none;
+  padding: 5px;
+  margin-bottom: 10px;
+  font-size: 17px;
+  border-radius: 10px;
+  background-color: antiquewhite;
+   }
+
+
+.content_details,.faq,.menu_res{
+width: 95%;
+padding-left: 20px;
+}
+
+.content_details,.menu_res p{
+color: #54565B;
+font-size:18px ;
+line-height: 30px;
+}
+
+.menu_res details{
+font-size: 25px;
+border: none;
+margin-top: 10px;
+}
+.content_details h3{
+color: #006491;
+}
+
+
+.menu_res a{
+word-break: keep-all;
+font-size: 14px;
+flex-wrap: wrap;
+word-spacing: 4px;
+text-align: center;
+text-decoration: none;
+color: black;
+box-shadow: 2px 2px 1px 1px;
+line-height: 40px;
+padding: 6px 8px 6px 8px;
+background-color: bisque;
 }
 

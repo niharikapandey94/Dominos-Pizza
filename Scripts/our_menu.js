@@ -5,11 +5,11 @@ fetch(veg_pizza)
       display(data.veg)
   })
 
-
+let url="/JSON/our_menu.json"
   
   function display(data){ 
     document.querySelector(".veg").addEventListener("click",()=>{
-    document.getElementById("pizza_name").innerText="Veg Pizza"
+    document.getElementById("pizza_name").innerText="VEG PIZZAS"
    });
   
     data.forEach(elem => {
@@ -28,7 +28,7 @@ fetch(veg_pizza)
        button.innerText="ORDER NOW"
 
        button.addEventListener("click",()=>{
-        window.location.href="####"
+       window.location.href="####---link----#######"
        })
 
        card.append(image,title,dis,button)
@@ -39,26 +39,45 @@ fetch(veg_pizza)
 
 
   document.querySelector(".non_veg").addEventListener("click",(data)=>{
-    document.getElementById("pizza_name").innerText="Non Pizza"
+    document.getElementById("pizza_name").innerText="NON VEG PIZZAS"
      document.getElementById("pizza_display").innerHTML=null
-     let url="/JSON/our_menu.json"
           fetch(url)
             .then((res)=>res.json())
             .then((data)=>{
                 display(data.non_veg)
-                console.log("hello")
             })
    });
 
 
    document.querySelector(".veg").addEventListener("click",(data)=>{
-    document.getElementById("pizza_name").innerText="Non Pizza"
+    document.getElementById("pizza_name").innerText="NON VEG PIZZAS"
      document.getElementById("pizza_display").innerHTML=null
-     let url="/JSON/our_menu.json"
           fetch(url)
             .then((res)=>res.json())
             .then((data)=>{
                 display(data.veg)
-                console.log("hello")
             })
    });
+
+
+   document.querySelector(".side_order").addEventListener("click",(data)=>{
+    document.getElementById("pizza_name").innerText="SIDE ORDER"
+     document.getElementById("pizza_display").innerHTML=null
+          fetch(url)
+            .then((res)=>res.json())
+            .then((data)=>{
+                display(data.side_order)
+            })
+   });
+
+   document.querySelector(".beverages").addEventListener("click",(data)=>{
+    document.getElementById("pizza_name").innerText="BEVERAGES"
+     document.getElementById("pizza_display").innerHTML=null
+          fetch(url)
+            .then((res)=>res.json())
+            .then((data)=>{
+                display(data.beverages)
+            })
+   });
+
+  
