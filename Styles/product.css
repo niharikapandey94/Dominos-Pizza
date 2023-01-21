@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product</title>
-    <link rel="stylesheet" href="Styles/product.css">
-    <style>
-         body {
+ /* navigation bars */
+
+ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -28,7 +21,7 @@
     border-top: 1px solid rgba(255, 255, 255, 0.10);
 }
 .sidebarMenuInner li{
-    /* list-style: none; */
+    list-style: none;
     color: #fff;
     text-transform: uppercase;
     padding: 20px;
@@ -57,7 +50,7 @@ input[type=checkbox] {
     box-sizing: border-box;
     cursor: pointer;
     position: absolute;
-    /* z-index: 99; */
+    z-index: 99;
     height: 100%;
     width: 100%;
     top: 22px;
@@ -65,22 +58,22 @@ input[type=checkbox] {
     height: 22px;
     width: 22px;
 }
-/* .burger {
+.burger {
     transition: all 0.3s;
     box-sizing: border-box;
     position: absolute;
     height: 3px;
     width: 100%;
     background-color: red;
-} */
-/* .horizontal {
+}
+.horizontal {
     transition: all 0.3s;
     box-sizing: border-box;
     position: relative;
     float: left;
     margin-top: 3px;
-} */
-/* .diagonal.part-1 {
+}
+.diagonal.part-1 {
     position: relative;
     transition: all 0.3s;
     box-sizing: border-box;
@@ -92,32 +85,4 @@ input[type=checkbox] {
     position: relative;
     float: left;
     margin-top: 3px;
-}  */
-    </style>
-</head>
-<body>
-    <nav>
-        <div class="firstPart">
-        <div class="slidingOption">
-        <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
-  <label for="openSidebarMenu" class="sidebarIconToggle">
-    <!-- <div class="burger diagonal part-1"></div> -->
-    <!-- <div class="burger horizontal">=</div> -->
-    <!-- <div class="burger diagonal part-2"></div> -->
-  
-  </label>
-  <div id="sidebarMenu">
-    <ul class="sidebarMenuInner">
-      <li><a href=" " target="_blank">Company</a></li>
-      <li><a href=" " target="_blank">Instagram</a></li>
-      <li><a href=" " target="_blank">Twitter</a></li>
-      <li><a href=" " target="_blank">YouTube</a></li>
-      <li><a href=" " target="_blank">Linkedin</a></li>
-    </ul>
-    </div>
-    </div>
-    <div class="Img"> <img src="Images/facebook.png " alt=""></div>
-    </div>
-    </nav>
-</body>
-</html>
+} 
