@@ -5,12 +5,131 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product</title>
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  /* #menu Options */
+
+  .MainMenuOptions{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0D47A1;
+    color: aliceblue;
+  }
+  .AllMenuOptions{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+  .AllMenuOptions div{
+    margin-right: 20px;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+
+  /* footer */
+  .footer{
+    width: 100%;
+    height: 160px;
+    background-color: #222E3A;
+    color: #546273;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footerInsider{
+    margin-left: 5%;
+    margin-top: 30px;
+  }
+  .footerOptions{
+    display: flex;
+  }
+  p{
+    margin-right: 30px;
+    margin-top: 30px;
+  }
+  .downloadApp{
+    margin-top: 30px;
+    margin-right: 10%;
+  }
+  .downloadApp img{
+    margin-top: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  h2{
+    text-align: center;
+  }
+  /* copyright */
+  .copyRight{
+    width: 100%;
+    background-color: #1A2735;
+}
+.copyRight p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: #5C6783;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-top: 0px;
+}
+    </style>
 </head>
 <body>
-    <div id="main-container">
-        
-
+  <!-- menu options -->
+  <div class="MainMenuOptions">
+    <div class="AllMenuOptions">
+         <div>EVERYDAY VALUE |</div>
+         <div>BESTSELLERS |</div>
+         <div>NEW LAUNCHES |</div>
+         <div>FLAVOUR OF EAST |</div>
+         <div>PARATHA PIZZA |</div>
+         <div>VEG PIZZA |</div>
+         <div>NON-VEG PIZZA |</div>
+         <div>BEVERAGES |</div>
+         <div>PIZZA MANIA |</div>
+         <div>SPECIALITY CHICKEN |</div>
+         <div>SIDES |</div>
+         <div>CHICKEN LOVERS PIZZA |</div>
+         <div>LUNCH COMBOS |</div>
+         <div>MEAL FOR 2 |</div>
+         <div>MEAL FOR 4 |</div>
+         <div>DESSERT |</div>
+         <div>CHEFBOSS</div>
     </div>
+ </div>
+
+ <!-- footer -->
+ <div class="footer">
+   <div class="footerInsider">
+      <div><img src="Images/hello_dominos_20210615.png" alt=""></div>
+      <div class="footerOptions">
+       <p>Disclaimer</p>
+      <p>Privacy Policy</p>
+      <p>Fag</p>
+      <p>Terms & Conditions</p>
+      <p>Feedback</p>
+      </div>
+      </div>
+      <div class="downloadApp">
+       <h2>Download App</h2>
+        <img src="Images/play_store.png" alt="">
+        <img src="Images/app_store.png" alt="">
+      </div>
+ </div>
+ <div class="copyRight">
+   <p>All Rights Reserved. Copyright © Jubilant FoodWorks Ltd.</p>
+</div>
 </body>
-<script src="../Scripts/product.js"></script>
 </html>
