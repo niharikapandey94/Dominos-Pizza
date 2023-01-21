@@ -1,3 +1,20 @@
+// navbar
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+
+const loginBtn = document.getElementById("login-btn");
+const slidingLogin = document.getElementById("sliding-login");
+ 
+loginBtn.addEventListener("click", function() {
+  slidingLogin.classList.toggle("active");
+});
+// navbar done
+
 
 // "start": "json-server --watch ./JSON/db.json"
 
@@ -7,7 +24,7 @@ let container = document.getElementById("main-container");
 
 for(let i=0;i<keys.length;i++){
 
-fetch("https://snotty-wash-4238-backend-niharikapandey94.vercel.app/"+keys[i])
+fetch("http://localhost:3000/"+keys[i])
 .then((res)=>{
 return  res.json();
 })
@@ -32,6 +49,7 @@ function card(data,key){
    heading.innerText = key.toUpperCase();
 
     heading.setAttribute("class","sec-head")
+    heading.setAttribute("id",key)
     container.append(heading);
 
     let main = document.createElement("div");
@@ -134,6 +152,9 @@ function card(data,key){
 
 }
 
+document.querySelector("a").addEventListener("click", function() {
+    document.getElementById("sides").scrollIntoView({behavior: 'smooth'});
+  });
 
 
 
