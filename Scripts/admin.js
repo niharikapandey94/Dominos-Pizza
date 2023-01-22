@@ -408,3 +408,15 @@ function deleteitem(category,iddf){
 select=sel.value;
   deleteitem(select,idvalinnum)
  })
+see=document.querySelector("#see");
+see.addEventListener("click",function(){
+  window.location.href="../Pages/product.html"
+})
+see1=document.querySelector("#see1");
+see1.addEventListener("click",function(){
+  window.location.href="../Pages/product.html"
+})
+see2=document.querySelector("#see2");
+see2.addEventListener("click",function(){
+  window.location.href="../Pages/product.html"
+})
