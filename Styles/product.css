@@ -121,6 +121,10 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
   }
+  .AllMenuOptions a{
+    text-decoration: none;
+    color: aliceblue;
+  }
   .AllMenuOptions div{
     margin-right: 20px;
     margin-top: 5px;
@@ -144,7 +148,7 @@
   .footerOptions{
     display: flex;
   }
-  p{
+  .footerOptions p{
     margin-right: 30px;
     margin-top: 30px;
   }
@@ -157,7 +161,7 @@
     margin-right: 20px;
     cursor: pointer;
   }
-  h2{
+ .downloadApp h2{
     text-align: center;
   }
   /* copyright */
