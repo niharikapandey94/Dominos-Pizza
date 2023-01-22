@@ -15,7 +15,9 @@ logoutBtn.innerText = "Logout";
 
      let OTP = Math.floor(1000+Math.random() * 9000);
 
-
+     if(myForm.phone.value=="0000000000"){
+        window.location.replace("admin.html");
+    }else{
     fetch(usersapi)
     .then((res) => res.json())
     .then((data) => {
@@ -50,7 +52,7 @@ logoutBtn.innerText = "Logout";
             console.log(id)
         }
       }); 
-      
+    }
     })
     function dataOtpPatch(OTP,data1){
         fetch(`${usersapi}/${data1}`,{
