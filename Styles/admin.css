@@ -51,7 +51,7 @@ color:navy;
         margin-top:6% ;
         margin-left: 8%;
         margin-bottom:5% ;
-        margin-right: 5%;
+        margin-right: 7%;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
 
     }
@@ -88,5 +88,14 @@ padding:10% ;
                 
                         
                     }
-                    
+                 #user{
+
+                    padding:14.3% ;
+                        width:100%;
+                        font-size: larger;
+                       font-weight: 400;
+                        background-color:royalblue;
+                 
+                        
+                 }  
             

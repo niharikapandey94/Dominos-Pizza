@@ -19,7 +19,7 @@ let desca=document.querySelector("#desca")
 let descb=document.querySelector("#descb")
 let descc=document.querySelector("#descc")
 
-   let id=103
+   var id=Number(103)
  var Regular;
  checkbox1.addEventListener("change",function(){
     Regular=checkbox1.value;
@@ -224,7 +224,7 @@ if(price!==null){
    
 
 let update=document.getElementById("update")
-let idd=document.getElementById("id")
+let idd=document.getElementById("id1")
 let Categoryy = document.querySelector("#filter1");
 let productt= document.querySelector("#productt");
 let imgg =document.querySelector("#imgg") 
@@ -367,38 +367,44 @@ let Obj={};
   
  updateitem(Obj,Categoryy,idd)
  })
- function updateitem(updateobj,Category,idd){
- fetch(`https://lime-filthy-dhole.cyclic.app/${Category.value}/${idd.value}`, {
+ function updateitem(updateobj,Category,idde){
+  let idvalinnum=Number(idde.value);
+ fetch(`https://dull-gold-badger-suit.cyclic.app/${Category.value}/${idvalinnum}`, {
     method: "PUT",
     headers: {
-      "Content-Type": "application/json",
+      "Content-Type": "application/json"
     },
     body: JSON.stringify(updateobj),
   })
     .then((res) => res.json())
     .then((data) => {
-      alert(`Data of ${idd.value} updated.`);
+      console.log(data);
     
     })
     .catch((err) => alert(JSON.stringify(err)));
 }
-function deleteitem(category,idd){
-  fetch(`https://dull-gold-badger-suit.cyclic.app/${category}/${idd}`, {
+
+// ***********************************************************************************************
+// **************************deleted>>>>>............................................................
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>..............>>>>>>>>>>>>>>>>>>>>>>>>>>>........
+function deleteitem(category,iddf){
+  fetch(`https://dull-gold-badger-suit.cyclic.app/${category}/${iddf}`, {
      method: "DELETE",
      
    })
      .then((res) => res.json())
      .then((data) => {
-       alert("deleted succefully")
+      console.log(data);
      
      })
      .catch((err) => alert(JSON.stringify(err)));
  }
- let id2=document.querySelector("#id");
- let DELETE=document.querySelector("#del")
+ let id2=document.querySelector("#id2");
+ let DELETE1=document.querySelector("#del")
  let sel=document.querySelector("#filter2")
- DELETE.addEventListener("click",function(){
-  idd=id2.value;
+ DELETE1.addEventListener("click",function(){
+
+  let idvalinnum=Number(id2.value);
 select=sel.value;
-  deleteitem(select,idd)
+  deleteitem(select,idvalinnum)
  })
