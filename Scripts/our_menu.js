@@ -1,11 +1,15 @@
-let veg_pizza="/JSON/our_menu.json"
-fetch(veg_pizza)
-  .then((res)=>res.json())
-  .then((data)=>{
-      display(data.veg)
-  })
 
-let url="/JSON/our_menu.json"
+let base="https://dull-gold-badger-suit.cyclic.app/"
+
+let veg_url= base+"veg"
+let non_veg_url=base+"non_veg "
+let side_order_url=base+"side_order"
+let beverage_url=base+"beverage"
+
+
+   fetch(veg_url)
+  .then((res)=>res.json())
+  .then((data)=>(display(data)))
   
   function display(data){ 
     document.querySelector(".veg").addEventListener("click",()=>{
@@ -28,34 +32,35 @@ let url="/JSON/our_menu.json"
        button.innerText="ORDER NOW"
 
        button.addEventListener("click",()=>{
-       window.location.href="####---link----#######"
+       window.location.href=""
+      
        })
 
        card.append(image,title,dis,button)
        document.getElementById("pizza_display").append(card)
     });
   } 
-
-
-
-  document.querySelector(".non_veg").addEventListener("click",(data)=>{
-    document.getElementById("pizza_name").innerText="NON VEG PIZZAS"
-     document.getElementById("pizza_display").innerHTML=null
-          fetch(url)
-            .then((res)=>res.json())
-            .then((data)=>{
-                display(data.non_veg)
-            })
-   });
+   
 
 
    document.querySelector(".veg").addEventListener("click",(data)=>{
     document.getElementById("pizza_name").innerText="NON VEG PIZZAS"
      document.getElementById("pizza_display").innerHTML=null
-          fetch(url)
+          fetch(veg_url)
             .then((res)=>res.json())
             .then((data)=>{
-                display(data.veg)
+                display(data)
+            })
+   });
+
+
+   document.querySelector(".non_veg").addEventListener("click",(data)=>{
+    document.getElementById("pizza_name").innerText="NON VEG PIZZAS"
+     document.getElementById("pizza_display").innerHTML=null
+          fetch(non_veg_url)
+            .then((res)=>res.json())
+            .then((data)=>{
+                display(data)
             })
    });
 
@@ -63,20 +68,20 @@ let url="/JSON/our_menu.json"
    document.querySelector(".side_order").addEventListener("click",(data)=>{
     document.getElementById("pizza_name").innerText="SIDE ORDER"
      document.getElementById("pizza_display").innerHTML=null
-          fetch(url)
+          fetch(side_order_url)
             .then((res)=>res.json())
             .then((data)=>{
-                display(data.side_order)
+                display(data)
             })
    });
 
    document.querySelector(".beverages").addEventListener("click",(data)=>{
     document.getElementById("pizza_name").innerText="BEVERAGES"
      document.getElementById("pizza_display").innerHTML=null
-          fetch(url)
+          fetch(beverage_url)
             .then((res)=>res.json())
             .then((data)=>{
-                display(data.beverages)
+                display(data)
             })
    });
 

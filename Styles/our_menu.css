@@ -118,6 +118,7 @@ details{margin-left: 5px;
    }
 
 
+
 .content_details,.faq,.menu_res{
 width: 95%;
 padding-left: 20px;
@@ -131,8 +132,13 @@ line-height: 30px;
 
 .menu_res details{
 font-size: 25px;
+padding-bottom: 20px;
 border: none;
 margin-top: 10px;
+}
+
+.menu_res{
+  padding-bottom: 50px;
 }
 .content_details h3{
 color: #006491;
@@ -152,4 +158,36 @@ line-height: 40px;
 padding: 6px 8px 6px 8px;
 background-color: bisque;
 }
+
+
+
+
+@media (max-width: 900px) and (min-width: 600px) {
+  #pizza_display{
+    grid-template-columns: repeat(2,1fr);
+  }
+  .great_taste{
+    padding-top: 180px;
+  }
+  .nav_btn button{
+    display:none;
+  }
+}
+
+
+
+
+@media (max-width: 601px) and (min-width: 100px) {
+  #pizza_display{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .nav_btn button{
+    display:none;
+  }
+  .great_taste{
+    padding-top: 250px;
+  }
+
+}
+
 
