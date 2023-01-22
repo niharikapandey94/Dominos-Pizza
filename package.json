@@ -19,6 +19,7 @@
   "homepage": "https://github.com/niharikapandey94/snotty-wash-4238#readme",
   "dependencies": {
     "cors": "^2.8.5",
-    "json-server": "^0.17.1"
+    "json-server": "^0.17.1",
+    "sweetalert2": "^11.7.0"
   }
 }
