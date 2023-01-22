@@ -13,12 +13,11 @@ nav{
     height: 70px;
 }
 .navlogo{
-    margin-left: 90px;
+    margin-left: 40px;
 }
 .navlogo img{
     cursor: pointer;
-    width: 210px;
-    height: 33px;
+    width: 50%;
 }
 .navOptions a{ 
     text-decoration: none;
