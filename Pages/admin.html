@@ -10,151 +10,58 @@
 
 <body>
     <header>
-      <div id="head"></div> 
-      <div id="head1">
-        <div id="a">
-<h1>Admin Panel</h1>
-        </div>
-        <div id="b">
-            <div id="b1">
-                <h2>Home</h2>
-            </div>
-            <div id="b2">
-                <h2>Products</h2>
-            </div>
-            <div id="b1">
-                <h2>Orders</h2>
-            </div>
-
-            <div id="b3">
-                <h2>Admins</h2>
-            </div>
-            <div id="b4">
-                <h2>Users</h2>
-            </div>
-            <div id="b1">
-                <h2>Messages</h2>
-            </div>
-        </div>
-        <div id="c">
-            <img src="https://cdn-icons-png.flaticon.com/512/456/456212.png"/>
-        </div>
-      </div> 
-<div id="lasth">
-   <h1>
-               Dashboard
-   </h1> 
+    <div  id="head">
+       
+<img src="../Images/DOMINI'S LOGO BLUE.png">
+<h1 id="panel">Admin Panel</h1>
+<h1 id="dash">
+    Dashboard
+      </h1> 
+</div>
+<div >
+     <h1 id="admin">Welcome Admin !</h1>   
+    
+  
 </div>
     </header>
     <footer>
-        <div id="footer1">
-<div id="fa">
-<div id="fa1">
-<h3>welcome!</h3>
-</div>
-<div id="fa2">
-<h3>admin</h3>
-</div>
-<div id="fa3">
-<button>update profile</button>
-</div>
-</div>
-<div id="fa">
-    <div id="fa1">
-        <h3>Rs2000/-</h3>
-        </div>
-        <div id="fa2">
-        <h3>total pending</h3>
-        </div>
-        <div id="fa3">
-        <button>see orders</button>
-        </div>
-</div>
-<div id="fa">
-    <div id="fa1">
-        <h3>RS1000/-</h3>
-        </div>
-        <div id="fa2">
-        <h3>total completes</h3>
-        </div>
-        <div id="fa3">
-        <button>see orders</button>
-        </div> 
-</div>
-<div  id="fa">
-    <div id="fa1">
-        <h3>2</h3>
-        </div>
-        <div id="fa2">
-        <h3>total orders</h3>
-        </div>
-        <div id="fa3">
-        <button>see orders</button>
-        </div> 
-</div>
-        </div>
-        <div id="footer2">
+        <div id="footer">
             <div id="fa">
-            <div id="fa1">
-            <h3>8</h3>
-            </div>
-            <div id="fa2">
-            <h3>product added</h3>
-            </div>
-            <div id="fa3">
-            <button id="added">See Products</button>
-            </div>
-            </div>
-            <div id="fa">
-                <div id="fa1">
-                    <h3>1</h3>
-                    </div>
-                    <div id="fa2">
-                    <h3>update product</h3>
-                    </div>
-                    <div id="fa3">
-                    <button>See Products</button>
-                    </div>
-            </div>
-            <div id="fa">
-                <div id="fa1">
-                    <h3>1</h3>
-                    </div>
-                    <div id="fa2">
-                    <h3>Delete Product</h3>
-                    </div>
-                    <div id="fa3">
-                    <button>See Products</button>
-                    </div> 
-            </div>
-            <div  id="fa">
-                <div id="fa1">
-                    <h3>1</h3>
-                    </div>
-                    <div id="fa2">
-                    <h3>new messages</h3>
-                    </div>
-                    <div id="fa3">
-                    <button>See Messages</button>
-                    </div> 
-            </div>
-                    </div>
-                    
-                        
-            
-                   
+              <!-- <h3 id="add">Add Product</h3>   -->
+            <button id="addb" >ADD PRODUCTS</button>
+        </div>
+        <div id="fa">
+            <!-- <h3 id="add">Update Product</h3>   -->
+            <button id="addu">UPDATES PRODUCTS</button>
+        </div>
+        <div id="fa">
+            <!-- <h3 id="add">Delete Product</h3>  -->
+            <button id="addd">DELETE PRODUCTS</button>
+        </div>
+        </div>
     </footer>
+       
 </body>
 </html>
 
   <script> 
   
-  let added=document.querySelector("#added");
+  let added=document.querySelector("#addb");
     
     added.addEventListener("click",function(){
         window.location.href="../Pages/adminpro.html"
         
-    })
-         
+    });
+   let  update=document.querySelector("#addu")
+    update.addEventListener("click",function(){
+        window.location.href="../Pages/adminpro.html"
+        });
+
+    let delete1=document.querySelector("#addd");
+    delete1.addEventListener("click",function(){
+        window.location.href="../Pages/adminpro.html"
+        
+
+    }) 
 
 </script>

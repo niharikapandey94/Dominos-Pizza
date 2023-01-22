@@ -202,7 +202,7 @@ if(price!==null){
      })
     
     function create(userObj,Category) {
-        fetch(`http://localhost:3000/${Category.value}`, {
+        fetch(`https://dull-gold-badger-suit.cyclic.app/${Category.value}`,{
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -368,7 +368,7 @@ let Obj={};
  updateitem(Obj,Categoryy,idd)
  })
  function updateitem(updateobj,Category,idd){
- fetch(`http://localhost:3000/${Category.value}/${idd.value}`, {
+ fetch(`https://lime-filthy-dhole.cyclic.app/${Category.value}/${idd.value}`, {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
@@ -382,17 +382,14 @@ let Obj={};
     })
     .catch((err) => alert(JSON.stringify(err)));
 }
-function deleteitem(Category,idd1){
-  fetch(`http://localhost:3000/${Category.value}/${idd1.value}`, {
+function deleteitem(category,idd){
+  fetch(`https://dull-gold-badger-suit.cyclic.app/${category}/${idd}`, {
      method: "DELETE",
-    //  headers: {
-    //    "Content-Type": "application/json",
-    //  },
-    //   body: JSON.stringify(updateobj),
+     
    })
      .then((res) => res.json())
      .then((data) => {
-       alert(`Data of ${idd.value} updated.`);
+       alert("deleted succefully")
      
      })
      .catch((err) => alert(JSON.stringify(err)));

@@ -2,75 +2,91 @@
     *{
 margin: 0%;
 padding: 0%;
+/* background-color: aqua; */
     }
     #head{
-        background-color: rgb(0,102,167);
-        height:30px
+       display: flex; 
+       
+       height:5% ;
+       
     }
-    #head1{
-        color: rgb(112,181,255);
-        height: 100px;
-        display: flex;
-        margin-top: 2%;
+    body{
+     background-image: url("../Images/wooden-plate-pita-bread-with-sliced-tomato-onion.jpg") ;
+     background-color:lightgreen;
+
     }
-    #a{
-        width: 30%;  
+    #admin{
+        font-size: 50px;
+margin-top:0% ;
+margin-left: 36.5%;
+color:navy;
     }
-    #b{
-        color: rgb(112,181,255);
-        height: 100px;
-        display: flex;
-        width: 90%;
-        margin-top: 0.8%;
-        margin-left: 15%;
+    
+    #panel{
+       margin-top: 3.8%; 
+        margin-left:21% ; 
+       color:maroon;
+       font-size: 40px;
     }
-    #b1{
-        width:10% ;
+    #dash{
+        margin-top:3.8% ;
+        margin-left:30%; 
+        color: brown;
+        font-size: 40px;
     }
-    #b2{
-        width:12% ;
-    }
-    #b3{
-        width:12% ;
-    }
-    #b4{
-        width:8% ;
-    }
-    #lasth{
-        color:  rgb(112,181,255);
-        margin-left: 45%;
-    }
-    img{
-        width:10% ;
-        margin-left:50% ;
-    }
-    #lasth{
-        margin-bottom: 6%;
-    }
-    #footer1{
+     img{
+        width:20%;
+       margin-top: -5%; 
+
+     }  
+     
+    
+    #footer{
         display: flex;
     }
-    #footer2{
-        display: flex;
-    }
+    
     #fa{
+        height: 70%;
         width: 20%;
-        margin-left: 5%;
+        margin-top:6% ;
+        margin-left: 8%;
         margin-bottom:5% ;
         margin-right: 5%;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+
     }
-    #fa1{
+    /* #add{
+      
         width:80%;
         margin-left:35% ;
+        height:60% ;
+    } */
+    #addb{
+padding:10% ;
+        width:100%;
+        font-size: larger;
+       font-weight: 400;
+        background-color:royalblue;
+
+        
     }
-    #fa2{
-        width:80%;
-        margin-left:25% ;
-    }
-    #fa3{
-        width:80%;
-        margin-left:35% ;
-        margin-bottom: 3%;
-        margin-top:3% ;
-    }
+    #addu{
+        padding:10% ;
+                width:100%;
+                font-size: larger;
+               font-weight: 400;
+                background-color:royalblue;
+        
+                
+            }
+            #addd{
+                padding:10% ;
+                        width:100%;
+                        font-size: larger;
+                       font-weight: 400;
+                        background-color:royalblue;
+                
+                        
+                    }
+                    
+            
