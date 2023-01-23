@@ -105,15 +105,15 @@ function display(abcd){
             display(data);
             sum()
         })
-      simgdiv.append(img)
-      dicsdiv.append(brand,des)
-     Quntitydiv.append(btn1,span,btn2,btn3)
-      pricesdiv.append(Quntitydiv,span1)
-       jay1.append(simgdiv,dicsdiv)
-        jay2.append(pricesdiv)
-        jay3.append(btncheckout)
-        card.append(jay1,jay2,jay3);
-        cartParent.append(card)
+        simgdiv.append(img)
+        dicsdiv.append(brand,des)
+         Quntitydiv.append(btn1,span,btn2,btn3)
+        pricesdiv.append(Quntitydiv)
+         jay1.append(simgdiv,dicsdiv)
+          jay2.append(pricesdiv)
+          jay3.append(btncheckout)
+          card.append(jay1,jay2);
+          cartParent.append(card)
     })
     }
 function card(data,key){
