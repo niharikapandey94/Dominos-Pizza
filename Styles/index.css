@@ -17,7 +17,10 @@ nav{
 }
 .navlogo img{
     cursor: pointer;
-    width: 50%;
+    width: 230px;
+}
+.navOptions{
+    width: 60%;
 }
 .navOptions a{ 
     text-decoration: none;
