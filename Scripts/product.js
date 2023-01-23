@@ -54,12 +54,16 @@ function display(abcd){
         // let cate = document.createElement("p");
         let btn1 = document.createElement("button");
         btn1.innerText = "+";
+        btn1.setAttribute("class","div33")
         let btn2 = document.createElement("button");
         btn2.innerText = "-";
+        btn2.setAttribute("class","div33")
         let btn3 = document.createElement("button");
          btn3.innerText = "Remove";
+        //  btn3.setAttribute("class","div33")
         let span =document.createElement("span");
         span.innerText = element.quantity;
+        span.setAttribute("class","div33")           
         let simgdiv = document.createElement("div");
         simgdiv.setAttribute("class","simgdiv")
         let dicsdiv = document.createElement("div");
@@ -105,6 +109,7 @@ function display(abcd){
             display(data);
             sum()
         })
+
         simgdiv.append(img)
         dicsdiv.append(brand,des)
          Quntitydiv.append(btn1,span,btn2,btn3)
@@ -114,6 +119,7 @@ function display(abcd){
           jay3.append(btncheckout)
           card.append(jay1,jay2);
           cartParent.append(card)
+
     })
     }
 function card(data,key){
