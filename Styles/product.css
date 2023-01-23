@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-
+  font-family: "Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif; 
 }
 #main-container{
   display: flex;
@@ -18,14 +18,14 @@
 
 #m1{
   width: 65%;
-
 }
 #m2{
-width: 20%;
+width: 27% ;
+box-sizing: border-box;
 
 }
 #m3{
-  width: 5%;
+  width: 0px;
 }
 
 .main{
@@ -53,6 +53,9 @@ width: 20%;
   margin-left: 23px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   position: relative;
+  /* border: 1px solid red; */
+  padding: 10px;
+  background-color: white;
 }
 
 .one img{
@@ -66,9 +69,9 @@ width: 20%;
 .addtocard{
   display: flex;
   justify-content: space-between;
-  width: 95%;
+  width: 100%;
   margin-top: 12px;
-    position: absolute;
+  position: absolute;
   }
 
 .btn{
@@ -110,9 +113,11 @@ width: 20%;
 }
 p{
   margin-left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 h3{
   margin-left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .def{
   margin-left: 10px;
@@ -142,6 +147,7 @@ h3{
 #carddiv{
   background-color:white; 
   position: sticky;
+  /* width: 100%; */
 }
 
 #carddiv > img{
@@ -168,7 +174,7 @@ margin-top: 560px;
 }
 .one1{
   height: 300px;
-  width:90%;
+  width: 90%;
   /* margin-left: 23px; */
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   margin: auto;
@@ -318,10 +324,28 @@ margin-top: 560px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #0066a7;
+  color: aliceblue;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+.nav button{
+  border: 0px;
+  color: aliceblue;
+  background-color: red;
+  padding: 10px 30px 10px 30px;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.nav button:hover{
+  background-color: maroon;
 }
 .nav img{
   width: 230px;
   height: 60px;
+  margin-left: -400px;
 }
 .sidenav {
   height: 100%;
@@ -336,16 +360,14 @@ margin-top: 560px;
   padding-top: 60px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 8px;
   text-decoration: none;
   font-size: 18px;
   color: white;
   display: block;
   transition: 0.3s;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
 }
 
 .sidenav a:hover {
@@ -389,13 +411,14 @@ margin-top: 560px;
     border-radius: 5px; 
     cursor: pointer;
 }
+
 #sliding-login {
   position: absolute;
   top: 50px;
   right: 0;
   width: 0;
   height: 200px;
-  background-color: white;
+  background-color: #e9edef;
   overflow: hidden;
   transition: width 0.5s;
   display: block;
@@ -405,7 +428,47 @@ margin-top: 560px;
 }
 #sliding-login.active {
   width: 300px;
+  height: 400px;
+  z-index: 99999;
+  padding-left: 15px;
+  padding-right: 10px;
 }
+
+#sliding-login img{
+  height: 60px;
+  width: 80%;
+}
+
+
+#sliding-login h2{
+ color: black;
+}
+
+#sliding-login form{
+  margin-top: 30px;
+  background-color: white;
+  height: 120px;
+  padding-top: 23px;
+  padding-left: 10px;
+ }
+
+#sliding-login form #phone{
+  height: 40px;
+  font-size: 20.5px;
+}
+
+
+#sliding-login form #submit{
+  display: block;
+  margin: 15px auto auto auto;
+  height: 30px;
+  width: 100px;
+  font-weight: bolder;
+  border: 0;
+  background-color: #0066a7;
+  color: white;
+}
+
 
 /* #menu Options */
 
@@ -417,6 +480,9 @@ margin-top: 560px;
   align-items: center;
   background-color: #0066a7;
   color: aliceblue;
+  position: sticky;
+  top: 0;
+  z-index: 9998;
 }
 .AllMenuOptions{
   width: 90%;
@@ -436,4 +502,27 @@ margin-top: 560px;
 .AllMenuOptions a{
   text-decoration: none;
   color:aliceblue;
+}
+
+
+/* scroll up */
+
+#MYBtn { 
+  /* display: none; */
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color:#0066a7;
+  color: white;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+#MYBtn:hover {
+  background-color: #555;
 }

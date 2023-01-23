@@ -109,15 +109,17 @@ function display(abcd){
             display(data);
             sum()
         })
-      simgdiv.append(img)
-      dicsdiv.append(brand,des)
-       Quntitydiv.append(btn1,span,btn2,btn3)
-      pricesdiv.append(Quntitydiv)
-       jay1.append(simgdiv,dicsdiv)
-        jay2.append(pricesdiv)
-        jay3.append(btncheckout)
-        card.append(jay1,jay2);
-        cartParent.append(card)
+
+        simgdiv.append(img)
+        dicsdiv.append(brand,des)
+         Quntitydiv.append(btn1,span,btn2,btn3)
+        pricesdiv.append(Quntitydiv)
+         jay1.append(simgdiv,dicsdiv)
+          jay2.append(pricesdiv)
+          jay3.append(btncheckout)
+          card.append(jay1,jay2);
+          cartParent.append(card)
+
     })
     }
 function card(data,key){
@@ -327,14 +329,11 @@ let divs = document.querySelector(".one1")
 
 sides.addEventListener("click", () => {
         sides.scrollIntoView({ behavior: 'smooth' });
-        console.log("HELLO");
-        alert ("Ok")
     });
 
 
 bestseller.addEventListener("click", function () {
     bestseller.scrollIntoView({ behavior: 'smooth' });
-    console.log("HELLO");
 });
 
 newlaunches.addEventListener("click", function () {
@@ -392,3 +391,26 @@ chefboss.addEventListener("click", function() {
 specialitychicken.addEventListener("click", function() {
     specialitychicken.scrollIntoView({behavior: 'smooth'});
 });
+
+
+
+// scrollup
+
+let mybutton = document.getElementById("MYBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
