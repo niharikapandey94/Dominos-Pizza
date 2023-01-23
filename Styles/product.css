@@ -136,6 +136,8 @@ h3{
   background-color:
   #ffffff#fff;
   margin-top: 50px;
+  /* border: 10px solid red; */
+
 }
 #carddiv{
   background-color:white; 
@@ -219,9 +221,45 @@ margin-top: 560px;
 }
 .Quntitydiv{
   margin-right: 20px;
-  width: 60%;
+  width: 100%;
   text-align: center;
+  /* border: 10px solid green; */
 }
+#CHECKOUT{
+  /* border: 10px solid green; */
+  text-align: center;
+  height: 10px;
+  position: sticky;
+  top: 10px;
+  bottom: 0px;    
+  background-color:
+  #ffffff#fff;
+  margin-top: 10px;
+  top: 100px;
+   
+}
+#CHECKOUTbtn{  
+ padding: 4px 10px;
+  background-color:#82bb37;
+  color: #722A1B;  
+  margin: 5px 0;
+  margin-top: 420px;
+  color: #fff;
+  border: 0;
+  font-weight: bold;
+  font-size: medium;
+  cursor: pointer;
+  position: sticky; 
+  width: 260px;
+  height: 40px;  
+
+ }
+ .div33{
+  /* width: 10%; */
+  width: 30px;
+  height: 20px;
+
+ }
 
 
 /* ------------------------------------------------------------ */

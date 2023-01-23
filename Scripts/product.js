@@ -54,12 +54,16 @@ function display(abcd){
         // let cate = document.createElement("p");
         let btn1 = document.createElement("button");
         btn1.innerText = "+";
+        btn1.setAttribute("class","div33")
         let btn2 = document.createElement("button");
         btn2.innerText = "-";
+        btn2.setAttribute("class","div33")
         let btn3 = document.createElement("button");
          btn3.innerText = "Remove";
+        //  btn3.setAttribute("class","div33")
         let span =document.createElement("span");
         span.innerText = element.quantity;
+        span.setAttribute("class","div33")           
         let simgdiv = document.createElement("div");
         simgdiv.setAttribute("class","simgdiv")
         let dicsdiv = document.createElement("div");
@@ -107,12 +111,12 @@ function display(abcd){
         })
       simgdiv.append(img)
       dicsdiv.append(brand,des)
-     Quntitydiv.append(btn1,span,btn2,btn3)
-      pricesdiv.append(Quntitydiv,span1)
+       Quntitydiv.append(btn1,span,btn2,btn3)
+      pricesdiv.append(Quntitydiv)
        jay1.append(simgdiv,dicsdiv)
         jay2.append(pricesdiv)
         jay3.append(btncheckout)
-        card.append(jay1,jay2,jay3);
+        card.append(jay1,jay2);
         cartParent.append(card)
     })
     }
@@ -273,14 +277,14 @@ function card(data,key){
         // price.innerText = "MRP:"+ element.price;
 
         addtocard1.append(substrctbtn,span,addbtn)
-        addtocard.append(addtocard1,btn)
-        one.append(image,name,desc,size,prices,addtocard);
+        addtocard.append(addtocard1)
+        one.append(image,name,desc,size,prices,btn);
         main.append(one)
         main1.append(heading,main);
         // main2.append(main1) 
         m1.append(main1)  
         // m2.append()
-        container.append(m1,m2,m3);
+        container.append(m1,m2);
         container1.append(container,fotterdiv)
     })
 
