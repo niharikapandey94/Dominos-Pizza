@@ -32,7 +32,7 @@ let beverage_url=base+"beverage"
        button.innerText="ORDER NOW"
 
        button.addEventListener("click",()=>{
-       window.location.href="/Pages/product.html"
+       window.location.href="../Pages/product.html"
       
        })
 
