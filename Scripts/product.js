@@ -273,14 +273,14 @@ function card(data,key){
         // price.innerText = "MRP:"+ element.price;
 
         addtocard1.append(substrctbtn,span,addbtn)
-        addtocard.append(addtocard1,btn)
-        one.append(image,name,desc,size,prices,addtocard);
+        addtocard.append(addtocard1)
+        one.append(image,name,desc,size,prices,btn);
         main.append(one)
         main1.append(heading,main);
         // main2.append(main1) 
         m1.append(main1)  
         // m2.append()
-        container.append(m1,m2,m3);
+        container.append(m1,m2);
         container1.append(container,fotterdiv)
     })
 
@@ -323,14 +323,11 @@ let divs = document.querySelector(".one1")
 
 sides.addEventListener("click", () => {
         sides.scrollIntoView({ behavior: 'smooth' });
-        console.log("HELLO");
-        alert ("Ok")
     });
 
 
 bestseller.addEventListener("click", function () {
     bestseller.scrollIntoView({ behavior: 'smooth' });
-    console.log("HELLO");
 });
 
 newlaunches.addEventListener("click", function () {
@@ -388,3 +385,26 @@ chefboss.addEventListener("click", function() {
 specialitychicken.addEventListener("click", function() {
     specialitychicken.scrollIntoView({behavior: 'smooth'});
 });
+
+
+
+// scrollup
+
+let mybutton = document.getElementById("MYBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
