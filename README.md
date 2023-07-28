@@ -22,8 +22,6 @@ Domino’s Pizza ranks among the world’s top restaurant brands. Delivering Piz
 4-JSON SERVER
 ```
 # Pages
- 
-  ```
 
 ## ![Home Section](https://img.shields.io/badge/home_section-%231572B6.svg?style=for-the-badge)
 ![image](https://i.ibb.co/5YgMwbk/home-page-2.png)
@@ -36,6 +34,7 @@ Domino’s Pizza ranks among the world’s top restaurant brands. Delivering Piz
 
 ## ![Admin Section](https://img.shields.io/badge/tech_stack-%231572B6.svg?style=for-the-badge)
 ![image](https://i.ibb.co/WfBJbSL/admin-2.png)
+
 
 
   ```
