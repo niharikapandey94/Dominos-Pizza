@@ -1,10 +1,10 @@
 # snotty-wash-4238
    ```
-Deliciou's Pizza(clone of Domino's Pizza)
+Delicious Pizza(clone of Domino's Pizza)
    ```
 # About
   ```
-Domino’s Pizza ranks among the world’s top restaurant brands.DElivering Pizza different varity both online  and offine line mode.
+Domino’s Pizza ranks among the world’s top restaurant brands. Delivering Pizza in different variety both online  and offline line mode.
    ```
 # Made by
   ```
