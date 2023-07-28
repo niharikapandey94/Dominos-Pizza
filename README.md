@@ -4,7 +4,7 @@ Delicious Pizza(clone of Domino's Pizza)
    ```
 # About
   ```
-Domino’s Pizza ranks among the world’s top restaurant brands. Delivering Pizza in different variety both online  and offline line mode.
+Dominos Pizza ranks among the world’s top restaurant brands. Delivering Pizza in different varieties both online  and offline line mode.
    ```
 # Made by
   ```
@@ -37,7 +37,7 @@ Domino’s Pizza ranks among the world’s top restaurant brands. Delivering Piz
 
 
 
-  ```
+  
 # Git hub link
   ```
 "https://github.com/niharikapandey94/snotty-wash-4238"
