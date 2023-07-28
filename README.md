@@ -23,10 +23,20 @@ Domino’s Pizza ranks among the world’s top restaurant brands.DElivering Pizz
 ```
 # Pages
   ```
-1-Home Page :  Made by-Sagar Rajwar
-2-Our Menu  : Made by-Shubham Kumar
-3-Product Page : Made by-Divyansh Goel and Jayesh Patil
-4-Admin Page : Made by-Niharika Pandey
+## ![Home Section](https://img.shields.io/badge/home_section-%231572B6.svg?style=for-the-badge)
+![image](https://i.ibb.co/5YgMwbk/home-page-2.png)
+
+## ![ Menu Section](https://img.shields.io/badge/services_section-%231572B6.svg?style=for-the-badge)
+![image](https://i.ibb.co/wCYMFfs/our-menu-2.png)
+
+## ![Order Section ](https://img.shields.io/badge/Our_team-%231572B6.svg?style=for-the-badge)
+![image](https://i.ibb.co/7JD9pC4/Order-now-2.png)
+
+## ![Admin Section ](https://img.shields.io/badge/tech_stack-%231572B6.svg?style=for-the-badge)
+![image](https://i.ibb.co/WfBJbSL/admin-2.png)
+
+
+
   ```
 # Git hub link
   ```
